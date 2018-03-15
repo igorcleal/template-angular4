@@ -1,0 +1,31 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header" data-background-color="red">
+            <h4 class="title">Edit Profile</h4>
+            <p class="category">Complete your profile</p>
+          </div>
+
+          <div class="card-content">
+            <form #f="ngForm" (submit)="formSubmit(f)">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="form-group form-black label-floating is-empty">
+                    <label class="control-label">Company (disabled)</label>
+                    <input ngModel name="descricao" type="text" class="form-control">
+                  </div>
+                  <button class="btn btn-danger pull-right" type="submit">Cadastrar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
